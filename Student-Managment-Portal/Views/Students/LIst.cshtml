@@ -1,0 +1,94 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Student_Managment_Portal.Models.Entities.Student> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background color */
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            color: #007bff; /* Blue heading color */
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff; /* White table background color */
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6; /* Light gray border between rows */
+        }
+
+        th {
+            
+            background-color: #007bff; /* Blue header background color */
+            color: blueviolet; /* White header text color */
+        }
+
+        tr:hover {
+            background-color: #f2f2f2; /* Light gray background color on hover */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Blue button background color */
+            border-color: #007bff; /* Blue button border color */
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+                border-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+<h1>Students</h1>
+
+<table class=" table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+                    <th>Course Name</th>
+                    <th>Location(City & State)</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var student in Model)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.CourseName</td>
+                <td>@student.BatchCoordinator</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="Students" asp-action="Edit" asp-route-id="@student.Id">Edit</a>
+                </td>
+</tr>
+        }
+    </tbody>
+</table>
+    </div>
+
+</body>
+</html>

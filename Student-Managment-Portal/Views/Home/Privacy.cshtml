@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Student Index Page";
+}
+@{
+    ViewData["Title"] = "Student Gallery";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Gallery"]</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Student Gallery</h1>
+
+        <div class="row">
+            @for (int i = 1; i <= 12; i++)
+            {
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://niitfoundation.org/wp-content/uploads/2023/02/lifeChanges1.jpg" alt="Student @i">
+                        <div class="card-body">
+                            <h5 class="card-title">Student @i</h5>
+                            <p class="card-text">
+                                Name: Pratik Satapath<br />
+                                Age: 14<br />
+                                Educations: Pursuing 9th Standard<br />
+                                School: KANHEIPUR NODAL HIGH SCHOOL<br />
+                                Course: Change Maker Life Skills program<br />
+                                Location: Kanheipur, Tangi, Odisha<br />
+                               Pratik Satapathy stood out because he was extremely shy, introverted and showed a lot of anxiety. Whenever he would be asked any questions, or if he knew discussion sessions were coming up, he would hide behind his classmates and avoid being chosen to answer the questions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+            <img src="https://cdn.pixabay.com/photo/2015/08/05/13/55/children-876543_1280.jpg" class="d-block w-100" alt="blackboard image">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Student NGO</h1>
+                    <p>There are lots of NGOs working for education but through a wide range of interactive courses and education programs</p>
+                    <p><a class="btn btn-lg btn-primary" asp-controller="Students" asp-action="Add">Join Now</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_1280.jpg" class="d-block w-100" alt="geometry image">
+
+        <div class="container">
+          <div class="carousel-caption">
+                    <p><a class="btn btn-lg btn-primary" asp-controller="Home" asp-action="Privacy">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+            <img src="https://niitfoundation.org/wp-content/uploads/2023/02/lifeChangesBanner.jpg" class="d-block w-100" alt="children in school">
+
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Intelligent Students.</h1>
+            <p>From all over India.</p>
+                    <p><a class="btn btn-lg btn-primary" asp-controller="Home" asp-action="Privacy">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br />
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+
+
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+          
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+            <img src="https://agora.unicef.org/pluginfile.php/551499/block_html/content/global.svg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Description of the image">
+            <h2 class="fw-normal">Educational Resources</h2>
+            <p>Access a comprehensive collection of educational materials tailored for students of all levels. Our repository includes e-books, video tutorials, and interactive courses on various IT topics such as programming, web development, cybersecurity, and data science. Enhance your learning experience with resources designed to build your skills and knowledge in the technology sector.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img src="https://agora.unicef.org/pluginfile.php/551499/block_html/content/free.svg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Description of the image">
+            <h2 class="fw-normal">Community</h2>
+            <p>
+                Join a vibrant community of like-minded students and professionals passionate about IT and social impact. Participate in forums, group projects, and collaborative initiatives that encourage knowledge sharing and teamwork. Engage in discussions, ask questions, and collaborate on projects that make a real difference in the community while building your network and developing new skills.
+
+            </p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+
+      <div class="col-lg-4">
+            <img src="https://agora.unicef.org/pluginfile.php/551499/block_html/content/flexible.svg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Description of the image">
+            <h2 class="fw-normal">Mentorship Programs</h2>
+            <p>Connect with experienced IT professionals and industry experts through our mentorship programs. Gain valuable insights, career advice, and personalized guidance to help you navigate your educational journey and future career path. Our mentors are committed to supporting students in achieving their goals and reaching their full potential.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+     <!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">School Digitalization. <span class="text-muted"></span></h2>
+            <h4 class="featurette-heading fw-normal lh-1">“True education must correspond to the surrounding circumstances or it is not a healthy growth.” ~ Mahatma Gandhi</h4>
+            <p class="lead">There is no denying the crucial part that technology plays in today’s educational system. However a sizable portion of the population has no access to technology or only has it infrequently, missing out on crucial educational content.</p>
+            <p class="lead">The project conducts teacher-training programs in all schools to help them effectively use the training material and digital classrooms. NIIT Foundation wishes to support teachers at these schools in presenting digital content in various formats to make learning engaging and intends to provide students with more information to help them make better decisions about their careers and professional lives.</p>
+      </div>
+      <div class="col-md-5">
+            <img src="https://niitfoundation.org/wp-content/uploads/2023/03/Mahatma-Gandhi.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="" role="img" aria-label="Placeholder: Students" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Change Maker Life Skills Program <span class="text-muted"></span></h2>
+            <p class="lead">The program enables students to reflect on the choices they can make to lead happy, fulfilled lives. Through this program students have learned to make choices that lead them to collaborate rather than compete or discriminate. Students learn to spend time on activities that will take them closer to their goals. The project envisions that the students who have undergone this program will choose to actively work towards growing as an individual and contribute towards society.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+            <img src="https://media.istockphoto.com/id/1048353892/photo/indian-school-children-in-classroom-rajasthan-india.jpg?s=612x612&w=0&k=20&c=EMUgego_orZv_THWmIP0l_uZCsQ9gHOxAR1516dgKfk=" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="" role="img" aria-label="Placeholder:-" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Financial Literacy for Drivers. <span class="text-muted"></span></h2>
+            <p class="lead">Financial planning and management are imperative to ensure financial stability of one’s family. It is also a way to help familiesimprove their lifestyle and provide the next generation with adequate opportunities to succeed in life. However, not all individuals have the necessary skill set to budget, plan and manage their money</p>
+      </div>
+      <div class="col-md-5">
+            <img src="https://niitfoundation.org/wp-content/uploads/2023/01/financial-literacy-banner.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="null" role="img" aria-label="Placeholder:-" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
